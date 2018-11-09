@@ -85,7 +85,8 @@ if [ -d CHIP-tools ]; then
   git pull
   popd
 fi
-git clone https://github.com/NextThingCo/CHIP-tools.git
+git clone https://github.com/NextThingCo/CHIP-tools-backup.git
+mv CHIP-tools-backup CHIP-tools
 
 echo -e "\n Installing CHIP-buildroot"
 if [ ! -d CHIP-buildroot ]; then
